@@ -49,7 +49,10 @@ const anotherMultiColorShirtObject = {
 
 // console.log(eqObjects(multiColorShirtObject, anotherMultiColorShirtObject));
 console.log(
-  assertEqual(eqObjects(multiColorShirtObject, anotherMultiColorShirtObject))
+  assertEqual(
+    eqObjects(multiColorShirtObject, anotherMultiColorShirtObject),
+    true
+  )
 ); // => true
 
 const longSleeveMultiColorShirtObject = {
@@ -59,5 +62,8 @@ const longSleeveMultiColorShirtObject = {
 };
 // console.log(eqObjects(multiColorShirtObject, longSleeveMultiColorShirtObject)); // => false
 console.log(
-  assertEqual(eqObjects(multiColorShirtObject, longSleeveMultiColorShirtObject))
+  assertEqual(
+    eqObjects(multiColorShirtObject, longSleeveMultiColorShirtObject),
+    false
+  )
 ); // => false
