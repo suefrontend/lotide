@@ -1,4 +1,4 @@
-const eqArrays = function (arr1, arr2) {
+const eqArrays = function(arr1, arr2) {
   let len = arr1.length > arr2.length ? arr1.length : arr2.length;
 
   for (let i = 0; i < len; i++) {
@@ -11,7 +11,7 @@ const eqArrays = function (arr1, arr2) {
   return true;
 };
 
-const eqObjects = function (object1, object2) {
+const eqObjects = function(object1, object2) {
   const keys1 = Object.keys(object1);
   const keys2 = Object.keys(object2);
 
@@ -33,7 +33,7 @@ const eqObjects = function (object1, object2) {
   return true;
 };
 
-const assertObjectsEqual = function (actual, expected) {
+const assertObjectsEqual = function(actual, expected) {
   // Implement me!
   const inspect = require("util").inspect; // <= add this line
 
